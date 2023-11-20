@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.picture-logo-container {
+    flex: 1;
+    background-color: rgb(245, 245, 245);
+}
+
+fieldset {
+    border: none;
+}
+
+.main-content-container {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+
+.section-1, .section-3 {
+    flex: 1;
+    background-color: rgb(245, 245, 245);
+}
+
+.section-2 {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    flex: 1;
+    display: flex;
+}
+
+.form-group {
+    display: inline-block;
+    flex: 1;
+}
+
+label {
+    display: block;
+}
+
+
+button {
+   background-color: #596D48;
+   color: white;
+}
+
+span {
+    color: #596D48;
+}
