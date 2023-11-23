@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'NorseBold';
+    src: url('Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     display: flex;
     height: 100vh;
@@ -6,17 +13,24 @@ body {
 }
 
 .black-colored-div {
-    /* background-color: black; */
-    margin-top: 25%;
-    height: 33.33%;
-    width: 33.33%;
+    margin-top: 35%;
+    height: 16%;
+    width: 100%;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 100px;
+    font-family: 'NorseBold', sans-serif;
 }
 
 .picture-logo-container {
     flex: 1;
     background-color: rgb(245, 245, 245);
+    position: relative;
+    overflow: hidden;
 }
 
 .picture-logo-container img {
@@ -109,4 +123,25 @@ span {
 
 h1 {
     margin-bottom: 0;
+}
+
+.photo-credits {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 10px;
+    color: white;
+    font-size: medium;
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+.black-colored-div img {
+    height: auto;
+    max-width: 20%;
+    object-fit: contain;
 }
