@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js" async></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,45 +16,45 @@
     </div>
     <div class="main-content-container" id="main-content-container">
         <div class="section-1" id="section-1">
-            <h2>This is not a real online service! You know you need something liks this in your life to help you realize your deepest dreams.</h2>
+            <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</h2>
             <h2>Sign up <i>now</i> to get started.</h2>
             <h3>You <i>know</i> you want to.</h3>
         </div>
         <div class="section-2" id="section-2">
             <h1>Let's do this!</h1>
-            <form>
+            <form onsubmit="return validatePassword()" method="post" action="/my-handling-form-page">
                 <fieldset class="form-group">
                     <p>
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name" name="first-name">
+                        <input type="text" id="first-name" name="first-name" required>
                     </p>
                     <p>
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
                     </p>
                     <p>
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" required>
                     </p>
                 </fieldset>
                 <fieldset class="form-group">
                     <p>
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name" name="last-name">
+                        <input type="text" id="last-name" name="last-name" required>
                     </p>
                     <p>
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" id="phone" name="phone">
+                        <input type="tel" id="phone" name="phone" required>
                     </p>
                     <p>
                         <label for="pass-confirm">CONFIRM PASSWORD</label>
-                        <input type="password" id="pass-confirm" name="pass-confirm">
+                        <input type="password" id="pass-confirm" name="pass-confirm" required>
                     </p>
                 </fieldset>
+                <button type="submit"><b>Create Account</b></button>
             </form>
         </div>
         <div class="section-3" id="section-3">
-            <button><b>Create Account</b></button>
             <p>Already have an account? <span class="log-in" id="log-in">Log in</span></p>
         </div>
     </div>

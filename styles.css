@@ -103,8 +103,11 @@ input {
 }
 
 input:focus {
-    background-color: #596D48;
-    border: 1px solid blue;
+    /* border: 1px solid blue !important;
+    border-bottom-color: blue !important;
+    border-right-color: blue !important;
+    border-top-color: blue !important;
+    border-left-color: blue !important; */
 }
 
 button {
