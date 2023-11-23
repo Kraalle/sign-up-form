@@ -2,6 +2,16 @@ body {
     display: flex;
     height: 100vh;
     margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.black-colored-div {
+    /* background-color: black; */
+    margin-top: 25%;
+    height: 33.33%;
+    width: 33.33%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .picture-logo-container {
@@ -9,8 +19,17 @@ body {
     background-color: rgb(245, 245, 245);
 }
 
+.picture-logo-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 fieldset {
     border: none;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .main-content-container {
@@ -25,6 +44,18 @@ fieldset {
     background-color: rgb(245, 245, 245);
 }
 
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 3em;
+    padding-right: 25%;
+}
+
+.section-1, .section-2, .section-3 {
+    padding-left: 3em;
+}
+
 .section-2 {
     flex: 1;
     background-color: white;
@@ -35,23 +66,46 @@ fieldset {
 form {
     flex: 1;
     display: flex;
+    justify-content: center;
+    max-width: 800px;
 }
 
 .form-group {
-    display: inline-block;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 label {
     display: block;
 }
 
+input {
+    width: 250px;
+    border: 1px solid gray;
+    border-radius: 0.3em;
+    height: 25px;
+}
+
+input:focus {
+    background-color: #596D48;
+    border: 1px solid blue;
+}
 
 button {
    background-color: #596D48;
    color: white;
+   margin-top: 3em;
+   width: 200px;
+   height: 50px;
+   border-radius: 1em;
 }
 
 span {
     color: #596D48;
+}
+
+h1 {
+    margin-bottom: 0;
 }
