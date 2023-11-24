@@ -1,3 +1,4 @@
+/* styles for left side of page */
 @font-face {
     font-family: 'NorseBold';
     src: url('Norse-Bold.otf') format('opentype');
@@ -27,7 +28,7 @@ body {
 }
 
 .picture-logo-container {
-    flex: 1;
+    flex: 0 0 30%;
     background-color: rgb(245, 245, 245);
     position: relative;
     overflow: hidden;
@@ -40,92 +41,8 @@ body {
     object-position: center;
 }
 
-fieldset {
-    border: none;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.main-content-container {
-    display: flex;
-    flex: 2;
-    flex-direction: column;
-}
-
-
-.section-1, .section-3 {
-    flex: 1;
-    background-color: rgb(245, 245, 245);
-}
-
-.section-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding-bottom: 3em;
-    padding-right: 25%;
-}
-
-.section-1, .section-2, .section-3 {
-    padding-left: 3em;
-}
-
-.section-2 {
-    flex: 1;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-}
-
-form {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    max-width: 800px;
-}
-
-.form-group {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-label {
-    display: block;
-}
-
-input {
-    width: 250px;
-    border: 1px solid gray;
-    border-radius: 0.3em;
-    height: 25px;
-}
-
-input:focus {
-    /* border: 1px solid blue !important;
-    border-bottom-color: blue !important;
-    border-right-color: blue !important;
-    border-top-color: blue !important;
-    border-left-color: blue !important; */
-}
-
-button {
-   background-color: #596D48;
-   color: white;
-   margin-top: 3em;
-   width: 200px;
-   height: 50px;
-   border-radius: 1em;
-   font-size: large;
-}
-
 span {
     color: #596D48;
-}
-
-h1 {
-    margin-bottom: 0;
 }
 
 .photo-credits {
@@ -148,3 +65,56 @@ a {
     max-width: 20%;
     object-fit: contain;
 }
+
+/* styles for right side of page */
+
+form {
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    margin-top: 3em;
+    width: 200px;
+    height: 50px;
+    border-radius: 1em;
+    font-size: large;
+ }
+
+ form > div, fieldset, ul{
+    box-sizing: border-box;
+    flex: 1;
+ }
+
+ ul {
+    margin: 0;
+    padding-left: 5%;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+ }
+
+ li {
+    margin-bottom: 0.5em;
+    flex: 0 0 calc(50% - 0.5em);
+    box-sizing: border-box;
+    width: 50px;
+ }
+
+ label {
+    display: block;
+ }
+
+ .section-1, .section-3 {
+    background-color: rgb(245, 245, 245);
+    padding-right: 30%;
+    padding-left: 5%;
+ }
+
+
+
+ 
