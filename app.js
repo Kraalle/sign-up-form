@@ -1,12 +1,18 @@
 function validatePassword() {
-    let password = document.querySelector("#password").value;
-    let passConfirm = document.querySelector("#pass-confirm").value;
-    let pwdMatch = document.querySelector("#pwd-match-msg");
+    let password = document.getElementById("password");
+    let passConfirm = document.getElementById("pass-confirm");
+    let pwdMatch = document.getElementById("pwd-match-msg");
 
-    if (password !== passConfirm) {
-        pwdMatch.textContent = "Passwords do not match!";
-        return false;
+    if (password.value !== passConfirm.value) {
+        pwdMatch.textContent = "* Passwords do not match";
+        pwdMatch.style.color = "red";
+        password.classList.add("password-mismatch");
+        passConfirm.classList.add("password-mismatch");
+        return false; // Prevent form submission
     }
+
     pwdMatch.textContent = "Passwords match";
-    return true;
+    password.classList.remove("password-mismatch");
+    passConfirm.classList.remove("password-mismatch");
+    return true; // Allow form submission
 }

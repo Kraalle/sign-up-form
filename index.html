@@ -14,7 +14,7 @@
         <img src="atul-vinayak-bPOxmXJz86U-unsplash.jpg" alt="forest">    
     </div>
     <div class="main-content-container" id="main-content-container">
-        <form method="post" onsubmit=" return validatePassword()">
+        <form method="post" onsubmit="return validatePassword()">
             <div class="section-1" id="section-1">
                 <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</h2>
                 <h2>Sign up <i>now</i> to get started.</h2>
@@ -39,12 +39,12 @@
                 </div>
                 <div class="inputs">
                     <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" name="password" class="password-field" minlength="9">
                     <div class="pwd-match-msg" id="pwd-match-msg"></div>
                 </div>
                 <div class="inputs">
                     <label for="pass-confirm">CONFIRM PASSWORD</label>
-                    <input type="password" id="pass-confirm" name="pass-confirm" required>
+                    <input type="password" id="pass-confirm" name="pass-confirm" class="password-field" required>
                 </div>
             </div>
             <div class="section-3" id="section-3">

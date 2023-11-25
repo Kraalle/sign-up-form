@@ -125,7 +125,24 @@ h2 {
 input {
     border: 1px solid #596D48;
     border-radius: 3px;
+    width: 70%;
+    height: 2em;
 }
+
+input:focus {
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.password-field {
+    border: 1px solid gray;
+}
+
+.password-mismatch {
+    border-color: red;
+}
+
 
 
 
