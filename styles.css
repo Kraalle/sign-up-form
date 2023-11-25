@@ -7,6 +7,10 @@
     font-style: normal;
 }
 
+:root {
+    --green-color: #596D48;
+}
+
 body {
     display: flex;
     height: 100vh;
@@ -43,7 +47,7 @@ body {
 }
 
 span {
-    color: #596D48;
+    color: var(--green-color);
 }
 
 .photo-credits {
@@ -71,7 +75,7 @@ a {
 
 
 button {
-    background-color: #596D48;
+    background-color: var(--green-color);
     color: white;
     margin-top: 3em;
     width: 200px;
@@ -123,7 +127,7 @@ h2 {
 }
 
 input {
-    border: 1px solid #596D48;
+    border: 1px solid var(--green-color);
     border-radius: 3px;
     width: 70%;
     height: 2em;
